@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acke\\projects\\c-sharp\\les_jackson\\08-Secure-NET-Core-API-with-Bearer-Authentication\\SecureAPI\\SecureAPI.csproj": {}
+    "C:\\Users\\Acke\\projects\\c-sharp\\les_jackson\\08-Secure-NET-Core-API-with-Bearer-Authentication\\SecureClient\\SecureClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acke\\projects\\c-sharp\\les_jackson\\08-Secure-NET-Core-API-with-Bearer-Authentication\\SecureAPI\\SecureAPI.csproj": {
+    "C:\\Users\\Acke\\projects\\c-sharp\\les_jackson\\08-Secure-NET-Core-API-with-Bearer-Authentication\\SecureClient\\SecureClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acke\\projects\\c-sharp\\les_jackson\\08-Secure-NET-Core-API-with-Bearer-Authentication\\SecureAPI\\SecureAPI.csproj",
-        "projectName": "SecureAPI",
-        "projectPath": "C:\\Users\\Acke\\projects\\c-sharp\\les_jackson\\08-Secure-NET-Core-API-with-Bearer-Authentication\\SecureAPI\\SecureAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Acke\\projects\\c-sharp\\les_jackson\\08-Secure-NET-Core-API-with-Bearer-Authentication\\SecureClient\\SecureClient.csproj",
+        "projectName": "SecureClient",
+        "projectPath": "C:\\Users\\Acke\\projects\\c-sharp\\les_jackson\\08-Secure-NET-Core-API-with-Bearer-Authentication\\SecureClient\\SecureClient.csproj",
         "packagesPath": "C:\\Users\\Acke\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acke\\projects\\c-sharp\\les_jackson\\08-Secure-NET-Core-API-with-Bearer-Authentication\\SecureAPI\\obj\\",
+        "outputPath": "C:\\Users\\Acke\\projects\\c-sharp\\les_jackson\\08-Secure-NET-Core-API-with-Bearer-Authentication\\SecureClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -43,9 +43,21 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "Microsoft.Extensions.Configuration": {
               "target": "Package",
-              "version": "[3.1.14, )"
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.Identity.Client": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [
@@ -59,9 +71,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
